@@ -1,12 +1,11 @@
 pipeline {
-    agent { docker { image 'maven:3.9.8-eclipse-temurin-21-alpine' } }
+  agent any
 
-    stages {
-        stage('Hai') {
-            steps {
-                echo " Sample Jenkins pipeline"
-            }
-        }
-
+  stages {
+    stage('Hello') {
+      steps {
+        echo 'Hello World'
+      }
     }
+  }
 }
